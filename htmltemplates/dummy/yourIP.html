@@ -1,0 +1,30 @@
+{% extends "dummy/base.html" %}
+{%block keywords%}"IP"{%endblock%}
+{%block title%}<title>Button IP</title>{%endblock%}
+{%block style%}
+<style type="text/css">
+   h3 { font-family: 'Kelly Slab';
+    font-weight:800;
+    font-size:20px;
+    }
+    .copyrights
+    {
+		font-size:10px;
+		font-weight:200;
+		color: #111111;
+		font-family: Arial, "MS Trebuchet", sans-serif;
+	}
+	
+   </style>
+{%endblock%}
+{%block body %}
+<div align="center">
+	<h3>Вся информация о тебе.</h3>
+	<p color="red">Твой IP :<br/>{{ ip }}</p>
+	<p color="red">Твой браузер :<br/>{{ browser }}</p>
+	<a color="grey" href="http://bttn.ru">Button</a>
+</div>
+
+		<p class="copyrights" align="center">Copyright © 2012-{%now "Y"%} www.bttn.ru All rights reserved. </p>
+{% endblock %}
+

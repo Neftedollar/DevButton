@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<!--Bootstrap-->
+	  <!--[if lt IE 9]>
+	<script src="http://bttn.ru/static/bootstrap/js/html5.js"></script>
+	<![endif]-->
+	   <link href="http://bttn.ru/static/bootstrap/css/bootstrap.css" rel="stylesheet">
+	   <link href="http://bttn.ru/static/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+	   <script src="http://code.jquery.com/jquery-1.7.2.js"></script>
+	   	<!--EndBootstrap-->
+	<link href="http://fonts.googleapis.com/css?family=Kelly+Slab&amp;subset=latin,latin-ext,cyrillic" rel="stylesheet" type="text/css">
+<!--Favicons-->
+	<link rel="shortcut icon" href="http://bttn.ru/media/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/media/favicon.ico" type="image/x-icon" />
+<!--EndFavicons-->
+<!--MetaTags-->
+        <meta name='yandex-verification' content='62fa8164b8da9b0f' />
+	<meta http-equiv="Content-Language" content="ru"/>
+	<meta name="keywords" content={%block keywords%}"Button, photo, фото, хендмейд"{%endblock%} />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--EndMetaTags-->
+	{% block title %}<title>Button</title>{%endblock%}
+<!--Style-->{% block style %}
+    
+{% endblock %}
+<!--EndStyle-->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32330949-1']);
+  _gaq.push(['_setDomainName', 'bttn.ru']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body  bgcolor="white">
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter14931865 = new Ya.Metrika({id:14931865, enableAll: true, webvisor:true});
+        } catch(e) {}
+    });
+    
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/14931865" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+{%block body%}{%endblock%}
+	   <script src="http://bttn.ru/static/bootstrap/js/bootstrap.js"></script>
+</body>
+	
+</html>

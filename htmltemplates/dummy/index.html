@@ -1,0 +1,62 @@
+{% extends "dummy/base.html" %}
+{% block keywords %}"button"{% endblock %}
+{% block title %}<title>Button</title>{% endblock %}
+{% block style %}
+<style type="text/css">
+   #centerLayer {
+     position: absolute; /* Абсолютное позиционирование */
+     left: 50%; /* Положение слоя от левого края */
+     top: 33%; /* Положение слоя от верхнего края */
+     margin-left: -200px; /* Отступ слева */
+     margin-top: -100px;	/* Отступ сверху */
+     background: #fff; /* Цвет фона */
+  /*  border: solid 1px black; /* Параметры рамки вокруг */
+    overflow: hidden; /* Добавление полосы прокрутки */ 
+   }
+   .DivWithoutBorder
+   {
+   	 width: 390px; /* Ширина слоя в пикселах */
+    height: 180px; /* Высота слоя в пикселах */
+   	border-style: none;
+   	padding: 10px; /* Поля вокруг текста */
+   }
+   .DivWithBorder
+   {
+   	padding: 0px; /* Поля вокруг текста */
+   	border-style: outset;
+   	border-width: 5px;
+   }
+      #footer {
+    position: fixed; /* Фиксированное положение */
+    left: 0; bottom: 0; /* Левый нижний угол */
+    padding: 10px; /* Поля вокруг текста */
+    background: #39b54a; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    width: 100%; /* Ширина слоя */
+   }
+
+   h3 { font-family: 'Kelly Slab';
+    font-weight:800;
+    font-size:20px;
+    }
+    .copyrights
+    {
+		font-size:10px;
+		font-weight:200;
+		color: #111111;
+		font-family: Arial, "MS Trebuchet", sans-serif;
+/*		top:95%;		*/
+	}
+   </style>
+{% endblock %}
+{% block body %}
+		<div align="middle" id="centerLayer" class="DivWithoutBorder" onmouseover="document.getElementById('centerLayer').className = 'DivWithBorder'"
+		onmouseout="document.getElementById('centerLayer').className='DivWithoutBorder'">
+						<img style="padding-top: 30px;" alt="BUTTON - это все твое."  src="http://bttn.ru/media/bttnOriginal.png" align="middle" />
+						<h3 align="center">BUTTON &ndash; это твое всё.</h3>
+						
+		</div>
+		
+		<p class="copyrights" align="center">Copyright © 2012-{%now "Y"%} www.bttn.ru All rights reserved. </p>
+{% endblock %}
+
